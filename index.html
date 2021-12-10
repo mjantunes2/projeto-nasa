@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Projeto APOD</title>
+  </head>
+  <body class="body">
+      <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="titles">
+            <h1 class="main-title">Astronomy Picture of the Day</h1>
+        </div>
+      </section>
+    <main class="main">
+      <div class="info-container">
+        <p class="info">
+          Explore o Cosmo! Todos os dias, diferentes imagens ou fotos do nosso
+          fascinante universo são exibidas, bem como breves explicações escritas
+          por astrônomos profissionais.
+        </p>
+      </div>
+      <div class="info-container">
+        <p class="info">
+          Escolha uma data a partir do dia 16 de junho de 1995 até os dias
+          atuais:
+        </p>
+      </div>
+      <form>
+        <div id="date-container">
+          <input id="date" type="date" min="1995-06-16" />
+        </div>
+      </form>
+      <div class="button-container">
+        <button type="submit" id="btnSubmit" value="enviar">
+          Vamos Nessa!
+        </button>
+      </div>
+      <div class="results">
+        <div id="title-container">
+          <h1 class="hide" id="title"></h1>
+        </div>
+        <div id="picture-video"></div>
+        <p class="hide" id="explain"></p>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="footer-text">Para Fins Estudantis - Murilo, 2021</p>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="javaScript/nasa.js"></script>
+  </body>
+</html>
